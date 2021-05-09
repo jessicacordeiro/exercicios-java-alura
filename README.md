@@ -1,2 +1,2 @@
-# execicios-java-alura
-Materiais desenvolvidos na Alura para treinar o Java e Orientação a Objetos. 👩‍💻
+# Java e Orientação a Objetos
+Materiais desenvolvidos na Alura para treinamento da linguagem Java 👩‍💻
