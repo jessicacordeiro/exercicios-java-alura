@@ -26,9 +26,7 @@ public class TesteIR {
 	       salario = salario - 350;
 	       System.out.println("A sua aliquota é de 15% e pode deduzir até R$ 350, "
 	       		+ "sendo assim seu salário final será: R$ " + salario);
-		}
-	        
-	    else if (salario >= 3751.10 && salario <= 4664.00) {
+		} else {
 	      salario = salario - 636;
 	      System.out.println("A sua aliquota é de 22,5% e pode deduzir até R$ 636, "
 	    		  + "sendo assim seu salário final será: R$ " + salario);
