@@ -7,7 +7,7 @@ public class CriaConta {
 		// Primeira Conta
 		Conta primeiraConta = new Conta();
 		primeiraConta.agencia = 1562;
-		primeiraConta.numero = 15639-9;
+		primeiraConta.numero = "15639-9";
 		primeiraConta.titular = "Ana Carolina";
 		primeiraConta.saldo = 200;
 		
@@ -24,7 +24,7 @@ public class CriaConta {
 		// Segunda Conta
 		Conta segundaConta = new Conta();
 		segundaConta.agencia = 2563;
-		segundaConta.numero = 25636-6;
+		segundaConta.numero = "25636-6";
 		segundaConta.titular = "Maria Florêncio";
 		segundaConta.saldo = 182;
 		

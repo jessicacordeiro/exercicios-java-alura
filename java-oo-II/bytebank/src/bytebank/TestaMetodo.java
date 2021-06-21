@@ -7,7 +7,7 @@ public class TestaMetodo {
 		// CONTA DE MAURÍCIO
 		Conta conta1 = new Conta();
 		conta1.agencia = 3562;
-		conta1.numero = 36589-9;
+		conta1.numero = "36589-9";
 		conta1.titular = "Maurício Alexandre";
 		conta1.saldo = 360;
 		
@@ -15,7 +15,7 @@ public class TestaMetodo {
 		System.out.println("Agência: " + conta1.agencia);
 		System.out.println("Número da Conta: " + conta1.numero);
 		System.out.println("Senha: " + conta1.titular);
-		System.out.println("Saldo: " + conta1.saldo);
+		System.out.println("Saldo R$ " + conta1.saldo);
 		
 		System.out.println("\n*** DEPOSITOS ***\n");
 		conta1.deposita(265);	
@@ -28,7 +28,7 @@ public class TestaMetodo {
 		// CONTA DE SARA
 		Conta conta2 = new Conta();
 		conta2.agencia = 2563;
-		conta2.numero = 25696-6;
+		conta2.numero = "25696-6";
 		conta2.titular = "Sara Cordeiro";
 		conta2.saldo = 360;
 		
@@ -36,7 +36,7 @@ public class TestaMetodo {
 		System.out.println("Agência: " + conta2.agencia);
 		System.out.println("Número da Conta: " + conta2.numero);
 		System.out.println("Senha: " + conta2.titular);
-		System.out.println("Saldo: " + conta2.saldo);
+		System.out.println("Saldo R$ " + conta2.saldo);
 		
 		
 		System.out.println("\n*** DEPOSITOS ***\n");

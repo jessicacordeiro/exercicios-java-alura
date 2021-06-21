@@ -3,11 +3,11 @@ public class Conta {
 	
 	private double saldo;
 	private int agencia;
-	private int numero;
+	private String numero;
 	private Cliente titular;
 	private static int total;
 	
-	public Conta(int agencia, int numero) {
+	public Conta(int agencia, String numero) {
 		this.agencia = agencia;
 		this.numero = numero;
 		total++;
@@ -46,7 +46,7 @@ public class Conta {
 		return agencia;
 	}
 
-	public int getNumero() {
+	public String getNumero() {
 		return numero;
 	}
 

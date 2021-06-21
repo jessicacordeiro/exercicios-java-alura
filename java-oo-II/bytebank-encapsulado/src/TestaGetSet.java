@@ -1,7 +1,7 @@
 
 public class TestaGetSet {
 	public static void main(String[] args) {
-		Conta conta = new Conta(1236, 02635-5);
+		Conta conta = new Conta(1236, "02635-5");
         conta.setTitular(new Cliente());
 
         conta.getTitular().setNome("Alice Oliveira Silva");
