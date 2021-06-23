@@ -1,14 +1,9 @@
 
-public class Funcionario {
+public class Cliente {
 	
 	private String nome;
 	private String cpf;
 	private String profissao;
-	protected double salario;
-	
-	public double getBonificacao() {
-		return this.salario * 0.1;
-	}
 	
 	public String getNome() {
 		return nome;
@@ -27,11 +22,5 @@ public class Funcionario {
 	}
 	public void setProfissao(String profissao) {
 		this.profissao = profissao;
-	}
-	public double getSalario() {
-		return salario;
-	}
-	public void setSalario(double salario) {
-		this.salario = salario;
 	}
 }
