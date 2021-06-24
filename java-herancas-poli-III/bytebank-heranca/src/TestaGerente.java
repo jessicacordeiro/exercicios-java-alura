@@ -9,6 +9,9 @@ public class TestaGerente {
 		gerente.setCpf("155.666.558-15");
 		gerente.setProfissao("Gerente Mobile");
 		gerente.setSalario(8563.25);
+		gerente.setSenha(2222);
+		
+		boolean autenticou = gerente.autentica(2222);
 		
 		System.out.println("\n------------ GERENTE ----------------\n");
 		System.out.println("Nome: " + gerente.getNome());
@@ -16,6 +19,7 @@ public class TestaGerente {
 		System.out.println("Profissão: " + gerente.getProfissao());
 		System.out.println("Salário R$ " + gerente.getSalario());
 		System.out.println("Bonificação R$ " + gerente.getBonificacao());
+		System.out.println(autenticou);
 		
 	}
 }

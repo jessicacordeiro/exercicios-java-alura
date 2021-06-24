@@ -1,17 +1,12 @@
 
-public class Administrador extends Funcionario implements Autenticavel {
+public class Cliente implements Autenticavel {
 
 	private AutenticacaoUtil auth;
-
-	public Administrador() {
+	
+	public Cliente() {
 		this.auth = new AutenticacaoUtil();
 	}
 	
-	@Override
-	public double getBonificacao() {
-		return 50;
-	}
-
 	@Override
 	public void setSenha(int senha) {
 		this.auth.setSenha(senha);
