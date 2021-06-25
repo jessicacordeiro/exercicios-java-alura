@@ -19,26 +19,20 @@ public abstract class Conta {
 	
 	public abstract void deposita(double valor);
 	
-	public boolean saca(double valor) {
-		if(this.saldo >= valor) {
-			this.saldo -= valor;
-			System.out.println("Saque Realizado com Sucesso!");
-			return true;
-		} else {
-			System.out.println("Saque Negado! Saldo de R$ " + valor + " valor insuficiente na conta.");
-			return false;
+	public void saca(double valor) throws SaldoInsuficienteException {
+		if(this.saldo < valor) {
+			throw new SaldoInsuficienteException("Saldo: " + this.saldo + ", Valor: " + valor);
 		}
+			
+		this.saldo -= valor;
+			System.out.println("Saque Realizado com Sucesso!");
+			
 	}
 	
-	public boolean transfere(double valor, Conta destino) {
-		if(this.saldo >= valor) {
-			this.saldo -= valor;
-			destino.deposita(valor);
-			System.out.println("Transferência Realizada com Sucesso!");
-			return true;
-		}
-		System.out.println("Tranferência Negada! Saldo de R$ " + valor + " valor insuficiente na conta.");
-		return false;
+	public void transfere(double valor, Conta destino) throws SaldoInsuficienteException {
+		this.saca(valor);
+		destino.deposita(valor);
+			
 	}
 
 	public double getSaldo() {

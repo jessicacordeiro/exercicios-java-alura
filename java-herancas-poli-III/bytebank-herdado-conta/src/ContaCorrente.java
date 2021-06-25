@@ -6,9 +6,9 @@ public class ContaCorrente extends Conta implements Tributario {
 	}
 	
 	@Override
-	public boolean saca(double valor) {
+	public void saca(double valor) throws SaldoInsuficienteException {
 		double valorAsacar = valor + 0.2;
-		return super.saca(valorAsacar);
+		super.saca(valorAsacar);
 	}
 
 	@Override
