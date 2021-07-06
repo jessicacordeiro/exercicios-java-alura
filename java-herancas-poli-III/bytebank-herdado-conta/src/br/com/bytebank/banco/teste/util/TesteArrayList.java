@@ -1,7 +1,9 @@
 package br.com.bytebank.banco.teste.util;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
+//import java.util.LinkedList;
+//import java.util.Vector;
 
 import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
@@ -11,7 +13,10 @@ public class TesteArrayList {
 	public static void main(String[] args) {
 		
 		// Generics
-		List<Conta> lista = new LinkedList<Conta>();
+		// List<Conta> lista = new LinkedList<Conta>(); -- Lista linkada.
+		// List<Conta> lista = new Vector<Conta>(); -- usa Array por baixo, mas também é threadsafe.
+		// Collection<Conta> lista = new Vector<Conta>();
+		List<Conta> lista = new ArrayList<Conta>(); // usa array por baixo.
 		
 		Conta cc = new ContaCorrente(1256, "12336-8");
 		lista.add(cc);
